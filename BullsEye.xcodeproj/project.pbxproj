@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		4F6002BF252148250058AFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6002BE252148250058AFE7 /* AppDelegate.swift */; };
 		4F6002C1252148250058AFE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6002C0252148250058AFE7 /* SceneDelegate.swift */; };
-		4F6002C3252148250058AFE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6002C2252148250058AFE7 /* ViewController.swift */; };
+		4F6002C3252148250058AFE7 /* BullsEyeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6002C2252148250058AFE7 /* BullsEyeController.swift */; };
 		4F6002C6252148250058AFE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F6002C4252148250058AFE7 /* Main.storyboard */; };
 		4F6002C8252148270058AFE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6002C7252148270058AFE7 /* Assets.xcassets */; };
 		4F6002CB252148270058AFE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F6002C9252148270058AFE7 /* LaunchScreen.storyboard */; };
 		4F6002D6252148280058AFE7 /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6002D5252148280058AFE7 /* BullsEyeTests.swift */; };
 		4F6002E1252148280058AFE7 /* BullsEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6002E0252148280058AFE7 /* BullsEyeUITests.swift */; };
+		4F6002F5252167150058AFE7 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6002F4252167150058AFE7 /* InfoVC.swift */; };
+		4F6002F7252168B20058AFE7 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 4F6002F6252168B20058AFE7 /* BullsEye.html */; };
+		4F6002FA25216A110058AFE7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6002F925216A110058AFE7 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		4F6002BB252148250058AFE7 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6002BE252148250058AFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F6002C0252148250058AFE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F6002C2252148250058AFE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F6002C2252148250058AFE7 /* BullsEyeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeController.swift; sourceTree = "<group>"; };
 		4F6002C5252148250058AFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F6002C7252148270058AFE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F6002CA252148270058AFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		4F6002DC252148280058AFE7 /* BullsEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6002E0252148280058AFE7 /* BullsEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeUITests.swift; sourceTree = "<group>"; };
 		4F6002E2252148280058AFE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F6002F4252167150058AFE7 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		4F6002F6252168B20058AFE7 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		4F6002F925216A110058AFE7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6002FA25216A110058AFE7 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +86,16 @@
 		4F6002B2252148250058AFE7 = {
 			isa = PBXGroup;
 			children = (
+				4F6002F32521484A0058AFE7 /* Model */,
+				4F6002F2252148470058AFE7 /* Controller */,
+				4F6002F0252148410058AFE7 /* View */,
+				4F6002EF2521483E0058AFE7 /* Delegates */,
+				4F6002EE2521483A0058AFE7 /* Resources */,
 				4F6002BD252148250058AFE7 /* BullsEye */,
 				4F6002D4252148280058AFE7 /* BullsEyeTests */,
 				4F6002DF252148280058AFE7 /* BullsEyeUITests */,
 				4F6002BC252148250058AFE7 /* Products */,
+				4F6002F825216A110058AFE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +112,7 @@
 		4F6002BD252148250058AFE7 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
-				4F6002BE252148250058AFE7 /* AppDelegate.swift */,
-				4F6002C0252148250058AFE7 /* SceneDelegate.swift */,
-				4F6002C2252148250058AFE7 /* ViewController.swift */,
-				4F6002C4252148250058AFE7 /* Main.storyboard */,
 				4F6002C7252148270058AFE7 /* Assets.xcassets */,
-				4F6002C9252148270058AFE7 /* LaunchScreen.storyboard */,
 				4F6002CC252148270058AFE7 /* Info.plist */,
 			);
 			path = BullsEye;
@@ -126,6 +134,64 @@
 				4F6002E2252148280058AFE7 /* Info.plist */,
 			);
 			path = BullsEyeUITests;
+			sourceTree = "<group>";
+		};
+		4F6002EE2521483A0058AFE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F6002F6252168B20058AFE7 /* BullsEye.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F6002EF2521483E0058AFE7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				4F6002BE252148250058AFE7 /* AppDelegate.swift */,
+				4F6002C0252148250058AFE7 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		4F6002F0252148410058AFE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F6002F1252148440058AFE7 /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F6002F1252148440058AFE7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4F6002C4252148250058AFE7 /* Main.storyboard */,
+				4F6002C9252148270058AFE7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4F6002F2252148470058AFE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F6002C2252148250058AFE7 /* BullsEyeController.swift */,
+				4F6002F4252167150058AFE7 /* InfoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F6002F32521484A0058AFE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F6002F825216A110058AFE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F6002F925216A110058AFE7 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F6002CB252148270058AFE7 /* LaunchScreen.storyboard in Resources */,
+				4F6002F7252168B20058AFE7 /* BullsEye.html in Resources */,
 				4F6002C8252148270058AFE7 /* Assets.xcassets in Resources */,
 				4F6002C6252148250058AFE7 /* Main.storyboard in Resources */,
 			);
@@ -259,7 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F6002C3252148250058AFE7 /* ViewController.swift in Sources */,
+				4F6002F5252167150058AFE7 /* InfoVC.swift in Sources */,
+				4F6002C3252148250058AFE7 /* BullsEyeController.swift in Sources */,
 				4F6002BF252148250058AFE7 /* AppDelegate.swift in Sources */,
 				4F6002C1252148250058AFE7 /* SceneDelegate.swift in Sources */,
 			);
